@@ -1,0 +1,23 @@
+if SHIELD_SPLIT_PLANCK_36_LEFT
+
+config ZMK_KEYBOARD_NAME
+	default "SplitPlanck"
+
+config ZMK_SPLIT_BLE_ROLE_CENTRAL
+	default y
+
+endif
+
+if SHIELD_SPLIT_PLANCK_36_RIGHT
+
+config ZMK_KEYBOARD_NAME
+	default "SplitPlanckRight"
+
+endif
+
+if SHIELD_SPLIT_PLANCK_36_RIGHT || SHIELD_SPLIT_PLANCK_36_LEFT
+
+config ZMK_SPLIT
+	default y
+
+endif

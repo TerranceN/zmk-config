@@ -1,0 +1,11 @@
+file_format: "1"
+id: split_planck_36
+name: SplitPlanck36
+type: shield
+url: https://github.com/TerranceN/zmk-config
+requires: [pro_micro]
+features:
+  - keys
+siblings:
+  - split_planck_36_left
+  - split_planck_36_right
