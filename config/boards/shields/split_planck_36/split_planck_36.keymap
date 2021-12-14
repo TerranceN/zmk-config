@@ -39,10 +39,10 @@
 
     number_and_quotes_layer {
       bindings = <
-         &kp Q       &kp W       &kp E      &kp R     &kp T                          &kp Y      &kp 7       &kp 8  &kp 9  &none
-         &hm LGUI A  &hm LALT S  &hm LTRL   &kp F     &kp G                          &kp H      &kp 4       &kp 5  &kp 6  &none
-         &kp Z       &kp X       &kp C      &kp V     &kp B                          &kp N      &kp 1       &kp 2  &kp 3  &none
-                                 &none      &kp ESC   &kp SPACE                      &kp BSPC   &kp 0       &none
+         &kp Q       &kp W       &kp E      &kp R     &kp T                          &none  &kp N7  &kp N8  &kp N9  &none
+         &hm LGUI A  &hm LALT S  &hm LTRL   &kp F     &kp G                          &none  &kp N4  &kp N5  &kp N6  &none
+         &kp Z       &kp X       &kp C      &kp V     &kp B                          &none  &kp N1  &kp N2  &kp N3  &none
+                                 &none      &kp ESC   &kp SPACE                      &none  &kp N0  &none
       >;
     };
 
