@@ -9,7 +9,7 @@
 #define CFG_LAYER 4
 
 &mt {
-  tapping-term-ms = <400>;
+  tapping-term-ms = <250>;
 };
 
 / {
@@ -31,7 +31,7 @@
     default_layer {
       bindings = <
          &kp Q       &kp W       &kp E          &kp R               &kp T                          &kp Y          &kp U       &kp I       &kp O       &kp P
-         &hm LGUI A  &hm LALT S  &hm LTRL       &kp F               &kp G                          &kp H          &kp J       &hm RCTL K  &hm RALT L  &hm RGUI SEMI
+         &hm LGUI A  &hm LALT S  &hm LTRL D     &kp F               &kp G                          &kp H          &kp J       &hm RCTL K  &hm RALT L  &hm RGUI SEMI
          &kp Z       &kp X       &kp C          &kp V               &kp B                          &kp N          &kp M       &kp COMMA   &kp DOT     &kp FSLH
                                  &mo CFG_LAYER  &lt NUM_LAYER ESC   &mt LSFT SPACE                 &mt RSFT BSPC  &kp ENTER   &none
       >;
@@ -39,19 +39,19 @@
 
     number_and_quotes_layer {
       bindings = <
-         &kp Q       &kp W       &kp E      &kp R     &kp T                          &none  &kp N7  &kp N8  &kp N9  &none
-         &hm LGUI A  &hm LALT S  &hm LTRL   &kp F     &kp G                          &none  &kp N4  &kp N5  &kp N6  &none
-         &kp Z       &kp X       &kp C      &kp V     &kp B                          &none  &kp N1  &kp N2  &kp N3  &none
-                                 &none      &kp ESC   &kp SPACE                      &none  &kp N0  &none
+         &kp Q       &kp W       &kp E       &kp R     &kp T                          &none  &kp N7  &kp N8  &kp N9  &none
+         &hm LGUI A  &hm LALT S  &hm LTRL D  &kp F     &kp G                          &none  &kp N4  &kp N5  &kp N6  &none
+         &kp Z       &kp X       &kp C       &kp V     &kp B                          &none  &kp N1  &kp N2  &kp N3  &none
+                                 &none       &kp ESC   &kp SPACE                      &none  &kp N0  &none
       >;
     };
 
     navigation_and_brackets_layer {
       bindings = <
-         &kp Q       &kp W       &kp E      &kp R     &kp T                          &kp Y      &kp U       &kp I       &kp O       &kp P
-         &hm LGUI A  &hm LALT S  &hm LTRL   &kp F     &kp G                          &kp H      &kp J       &hm RCTL K  &hm RALT L  &hm RGUI SEMI
-         &kp Z       &kp X       &kp C      &kp V     &kp B                          &kp N      &kp M       &kp COMMA   &kp DOT     &kp FSLH
-                                 &none      &kp ESC   &kp SPACE                      &kp BSPC   &kp ENTER   &none
+         &kp Q       &kp W       &kp E       &kp R     &kp T                          &kp Y      &kp U       &kp I       &kp O       &kp P
+         &hm LGUI A  &hm LALT S  &hm LTRL D  &kp F     &kp G                          &kp H      &kp J       &hm RCTL K  &hm RALT L  &hm RGUI SEMI
+         &kp Z       &kp X       &kp C       &kp V     &kp B                          &kp N      &kp M       &kp COMMA   &kp DOT     &kp FSLH
+                                 &none       &kp ESC   &kp SPACE                      &kp BSPC   &kp ENTER   &none
       >;
     };
 
