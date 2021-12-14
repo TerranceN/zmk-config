@@ -49,7 +49,7 @@
     navigation_and_brackets_layer {
       bindings = <
          &kp Q       &kp W       &kp E       &kp R     &kp T                          &kp CARET  &kp HOME    &kp PG_DN          &kp PG_UP        &kp END
-         &hm LGUI A  &hm LALT S  &hm LCTL D  &kp F     &kp G                          &kp TILDE  &kp LEFT    &hm RCTL DOWN      &hm RALT UP      &hm RGUI RIGHT
+         &hm LGUI A  &hm LALT S  &hm LCTL D  &kp F     &kp G                          &kp TILDE  &kp LEFT    &kp DOWN           &kp UP           &kp RIGHT
          &kp Z       &kp X       &kp C       &kp V     &kp B                          &none      &none       &kp K_SCROLL_DOWN  &kp K_SCROLL_UP  &none
                                  &none       &kp ESC   &kp SPACE                      &kp BSPC   &kp ENTER   &none
       >;
