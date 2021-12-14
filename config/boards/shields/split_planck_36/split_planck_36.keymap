@@ -43,31 +43,6 @@
       flavor = "hold-preferred";
       bindings = <&mo>, <&kp>;
     };
-
-    qt_r: quote_roll_workaround {
-      compatible = "zmk,behavior-hold-tap";
-      label = "QUOTE_ROLL_WORKAROUND";
-      #binding-cells = <2>;
-      tapping-term-ms = <0>;
-      flavor = "tap-unless-interrupted";
-      bindings = <&kp>, <&kp>;
-    };
-  };
-
-  combos {
-    compatible = "zmk,combos";
-    compbo_dqt_1 {
-      timeout-ms = <200>;
-      key-positions = <12>;
-      layers = <1>;
-      bindings = <&kp DQT>;
-    };
-    compbo_dqt_2 {
-      timeout-ms = <200>;
-      key-positions = <13>;
-      layers = <1>;
-      bindings = <&kp DQT>;
-    };
   };
 
   keymap {
@@ -85,7 +60,7 @@
     number_and_quotes_layer {
       bindings = <
          &kp SLASH  &kp ASTRK  &kp SQT        &kp SQT        &kp HASH                       &kp EXCL         &kp N7  &kp N8  &kp N9  &none
-         &kp MINUS  &kp PLUS   &qt_r DQT DQT  &qt_r DQT DQT  &kp DOLLAR                     &kp PRCNT        &kp N4  &kp N5  &kp N6  &kp MINUS
+         &kp MINUS  &kp PLUS   &mt_t DQT DQT  &mt_t DQT DQT  &kp DOLLAR                     &kp PRCNT        &kp N4  &kp N5  &kp N6  &kp MINUS
          &none      &kp DOT    &kp GRAVE      &kp GRAVE      &kp PIPE                       &kp AMPS         &kp N1  &kp N2  &kp N3  &kp EQUAL
                                &none          &none          &mt_t LSFT SPACE               &mt_t RSFT BSPC  &kp N0  &kp TAB
       >;
