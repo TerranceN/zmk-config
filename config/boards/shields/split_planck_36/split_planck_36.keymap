@@ -56,11 +56,17 @@
 
   combos {
     compatible = "zmk,combos";
-    compbo_dqt {
+    compbo_dqt_1 {
       timeout-ms = <200>;
-      key-positions = <12 13>;
+      key-positions = <12>;
       layers = <1>;
-      bindings = <&kp DQT>, <&kp DQT>;
+      bindings = <&kp DQT>;
+    };
+    compbo_dqt_2 {
+      timeout-ms = <200>;
+      key-positions = <13>;
+      layers = <1>;
+      bindings = <&kp DQT>;
     };
   };
 
