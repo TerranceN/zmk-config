@@ -43,6 +43,15 @@
       flavor = "hold-preferred";
       bindings = <&mo>, <&kp>;
     };
+
+    qt_r: quote_roll_workaround {
+      compatible = "zmk,behavior-hold-tap";
+      label = "QUOTE_ROLL_WORKAROUND";
+      #binding-cells = <2>;
+      tapping-term-ms = <0>;
+      flavor = "tap-unless-interrupted";
+      bindings = <&kp>, <&kp>;
+    };
   };
 
   keymap {
@@ -59,17 +68,17 @@
 
     number_and_quotes_layer {
       bindings = <
-         &kp SLASH  &kp ASTRK  &kp SQT    &kp SQT    &kp HASH                       &kp EXCL         &kp N7  &kp N8  &kp N9  &none
-         &kp MINUS  &kp PLUS   &kp DQT    &kp DQT    &kp DOLLAR                     &kp PRCNT        &kp N4  &kp N5  &kp N6  &none
-         &none      &kp DOT    &kp GRAVE  &kp GRAVE  &kp PIPE                       &kp AMPS         &kp N1  &kp N2  &kp N3  &kp EQUAL
-                               &none      &none      &mt_h LSFT SPACE               &mt_h RSFT BSPC  &kp N0  &kp TAB
+         &kp SLASH  &kp ASTRK  &kp SQT        &kp SQT        &kp HASH                       &kp EXCL         &kp N7  &kp N8  &kp N9  &none
+         &kp MINUS  &kp PLUS   &qt_r DQT DQT  &qt_r DQT DQT  &kp DOLLAR                     &kp PRCNT        &kp N4  &kp N5  &kp N6  &kp UNDER
+         &none      &kp DOT    &kp GRAVE      &kp GRAVE      &kp PIPE                       &kp AMPS         &kp N1  &kp N2  &kp N3  &kp EQUAL
+                               &none          &none          &mt_h LSFT SPACE               &mt_h RSFT BSPC  &kp N0  &kp TAB
       >;
     };
 
     navigation_and_brackets_layer {
       bindings = <
          &none   &none   &kp LBRC  &kp RBRC  &none                          &kp CARET        &kp HOME    &kp PG_DN  &kp PG_UP  &kp END
-         &kp LT  &kp GT  &kp LPAR  &kp RPAR  &kp UNDER                      &kp TILDE        &kp LEFT    &kp DOWN   &kp UP     &kp RIGHT
+         &kp LT  &kp GT  &kp LPAR  &kp RPAR  &none                          &kp TILDE        &kp LEFT    &kp DOWN   &kp UP     &kp RIGHT
          &none   &none   &kp LBKT  &kp RBKT  &kp BSLH                       &none            &none       &none      &none      &none
                          &none     &kp ESC   &mt_h LSFT SPACE               &mt_h RSFT BSPC  &kp ENTER   &kp TAB
       >;
