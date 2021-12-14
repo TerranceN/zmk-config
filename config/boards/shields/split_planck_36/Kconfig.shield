@@ -1,5 +1,5 @@
 config SHIELD_SPLIT_PLANCK_36_LEFT
       def_bool $(shields_list_contains,split_planck_36_left)
 
-config SHIELD_SLIT_PLANCK_36_RIGHT
+config SHIELD_SPLIT_PLANCK_36_RIGHT
       def_bool $(shields_list_contains,split_planck_36_right)
