@@ -9,7 +9,7 @@
 #define CFG_LAYER 4
 
 &mt {
-  tapping-term-ms = <300>;
+  tapping-term-ms = <500>;
 };
 
 / {
