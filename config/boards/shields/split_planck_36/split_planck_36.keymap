@@ -71,7 +71,7 @@
     number_and_quotes_layer {
       bindings = <
          &kp SLASH  &kp ASTRK  &mt_t SQT SQT      &mt_t SQT SQT      &kp HASH                       &kp EXCL         &kp N7           &kp N8  &kp N9  &none
-         &kp MINUS  &kp PLUS   &mt_t DQT DQT      &mt_t DQT DQT      &kp DOLLAR                     &kp PRCNT        &kp N4           &kp N5  &kp N6  &kp MINUS
+         &kp MINUS  &kp PLUS   &mt_t DQT DQT      &mt_t DQT DQT      &kp DOLLAR                     &kp PRCNT        &kp N4           &kp N5  &kp N6  &none
          &none      &kp DOT    &mt_t GRAVE GRAVE  &mt_t GRAVE GRAVE  &kp PIPE                       &kp AMPS         &kp N1           &kp N2  &kp N3  &kp EQUAL
                                &none              &none              &mt_s LSFT SPACE               &mt RSFT BSPC    &lt FN_LAYER N0  &kp TAB
       >;
